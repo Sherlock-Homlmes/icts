@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>template response</title>
+    </head>
+
+    <body>
+        <h1>form test</h1>
+        <form method="post" action="/form-test/">
+            {% csrf_token %}
+            {{form.as_ul}}
+            <br>
+            <button type="submit" name="save">Form test</button>
+        </form>
+        
+    </body>
+</html>
